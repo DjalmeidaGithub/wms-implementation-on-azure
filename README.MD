@@ -2,7 +2,7 @@
 
 This Terraform configuration creates a comprehensive, scalable, and cost-optimized Warehouse Management System infrastructure on Microsoft Azure with hybrid connectivity capabilities.
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 The WMS infrastructure is designed around a hybrid architecture that supports:
 
@@ -15,7 +15,7 @@ The WMS infrastructure is designed around a hybrid architecture that supports:
 - **Comprehensive security** with Azure AD, Key Vault, and private endpoints
 - **Cost optimization** through auto-scaling, spot instances, and lifecycle management
 
-## 🎯 Key Features
+##  Key Features
 
 ### Scalability
 - **Horizontal scaling**: AKS with auto-scaling node pools (2-20 nodes)
@@ -49,14 +49,14 @@ The WMS infrastructure is designed around a hybrid architecture that supports:
 - **Storage lifecycle**: Automated tiering to Cool/Archive storage
 - **Budget controls**: Cost budgets, alerts, and anomaly detection
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Azure CLI installed and configured
 - Terraform >= 1.0 installed
 - Azure subscription with appropriate permissions
 - PowerShell (for Windows-based deployments)
 
-## 🚀 Quick Start
+##  Quick Start
 
 1. **Clone and Initialize**
    ```bash
@@ -81,7 +81,7 @@ The WMS infrastructure is designed around a hybrid architecture that supports:
    terraform apply -var-file="terraform.tfvars"
    ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Key Variables
 
@@ -115,7 +115,7 @@ warehouse_locations = {
 }
 ```
 
-## 🏢 WMS-Specific Components
+##  WMS-Specific Components
 
 ### Core Services (Containerized)
 - **Inventory Service**: Real-time stock management and tracking
@@ -136,7 +136,7 @@ warehouse_locations = {
 - **Analytics Data**: Azure Data Factory pipelines to Data Lake
 - **Caching**: Redis for session state and frequently accessed data
 
-## 🔧 WMS Operations
+##  WMS Operations
 
 ### Pick Path Optimization
 - Algorithm implementation in AKS microservices
@@ -163,7 +163,7 @@ warehouse_locations = {
 - Real-time dock door status monitoring
 - RFID/GPS tracking data processing
 
-## 🔍 Monitoring & Observability
+##  Monitoring & Observability
 
 ### Application Performance
 - **Application Insights**: End-to-end request tracing
@@ -183,7 +183,7 @@ warehouse_locations = {
 - **Cost Dashboard**: Resource utilization and spend analysis
 - **Security Dashboard**: Threat detection and compliance
 
-## 💰 Cost Optimization Strategies
+##  Cost Optimization Strategies
 
 ### Compute Optimization
 - **Business hours scaling**: Reduced capacity during off-hours
@@ -203,7 +203,7 @@ warehouse_locations = {
 - **Query optimization**: Index tuning and execution plan analysis
 - **Archival**: Move historical data to cheaper storage tiers
 
-## 🔐 Security Framework
+##  Security Framework
 
 ### Network Security
 - **Zero-trust model**: Private endpoints for all PaaS services
@@ -229,7 +229,7 @@ warehouse_locations = {
 - **Security Center**: Threat detection and security posture
 - **Vulnerability scanning**: Regular security assessments
 
-## 🔄 Disaster Recovery
+##  Disaster Recovery
 
 ### RTO/RPO Targets
 - **Critical Systems**: RTO < 1 hour, RPO < 15 minutes
@@ -248,7 +248,7 @@ warehouse_locations = {
 - **Runbook automation**: Scripted recovery procedures
 - **Communication plans**: Stakeholder notification workflows
 
-## 🚦 Deployment Scenarios
+##  Deployment Scenarios
 
 ### Development Environment
 ```bash
@@ -268,7 +268,7 @@ terraform apply -var="environment=prod" -var="enable_disaster_recovery=true"
 - Premium storage and compute tiers
 - Comprehensive monitoring and alerting
 
-## 📊 Performance Benchmarks
+##  Performance Benchmarks
 
 ### Target Performance Metrics
 - **Barcode Scan Response**: < 1 second
@@ -283,7 +283,7 @@ terraform apply -var="environment=prod" -var="enable_disaster_recovery=true"
 - **Data Storage**: Petabyte-scale with auto-scaling
 - **Geographic Distribution**: Multi-continent deployment
 
-## 🔄 Integration Patterns
+##  Integration Patterns
 
 ### On-Premises Integration
 - **VPN Connectivity**: Site-to-site VPN with BGP routing
@@ -297,7 +297,7 @@ terraform apply -var="environment=prod" -var="enable_disaster_recovery=true"
 - **E-commerce**: Real-time inventory synchronization
 - **Carrier APIs**: FedEx, UPS, DHL shipping integration
 
-## 🛠️ Maintenance & Operations
+##  Maintenance & Operations
 
 ### Automated Operations
 - **Patching**: Automatic OS and security updates
@@ -311,7 +311,7 @@ terraform apply -var="environment=prod" -var="enable_disaster_recovery=true"
 - **Cost Reviews**: Weekly cost optimization reviews
 - **Performance Tuning**: Database and application optimization
 
-## 📚 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 1. **VPN Connectivity**: Check BGP peering and routing tables
@@ -325,7 +325,7 @@ terraform apply -var="environment=prod" -var="enable_disaster_recovery=true"
 - **Log Analytics**: Centralized logging and querying
 - **Azure Advisor**: Best practice recommendations
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -333,23 +333,23 @@ terraform apply -var="environment=prod" -var="enable_disaster_recovery=true"
 4. Add tests for new features
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+##  Support
 
 - **Documentation**: [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
 - **Issues**: Create a GitHub issue for bugs or feature requests
 - **Community**: Join the [Azure Community](https://azure.microsoft.com/en-us/support/community/)
 
-## 🏷️ Tags
+##  Tags
 
 `terraform` `azure` `warehouse-management` `hybrid-cloud` `microservices` `kubernetes` `cost-optimization` `security` `monitoring` `disaster-recovery` `devops` `infrastructure-as-code`
 
 ---
 
-**⚠️ Important Notes:**
+** Important Notes:**
 
 - Replace placeholder values (like IP addresses, emails, webhooks) with your actual values
 - Review and adjust security settings based on your compliance requirements
